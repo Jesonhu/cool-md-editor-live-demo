@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>live-demo</title>
+  <link rel="stylesheet" href="https://unpkg.com/cool-md-editor@1.2.0/dist/coolMdEditor.css">
+  <style>
+    .wrap {
+      width: 800px;
+      height: 600px;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="cool-md-editor-wrap editor-theme-light" id="editor-wrap"></div>
+  </div>
+  <script src="https://unpkg.com/cool-md-editor@1.2.0/dist/coolMdEditor.js"></script>
+  <script>
+    const editor = new CoolMDEditor({
+      el: document.getElementById('editor-wrap'),
+      defaultCon: '> 这是初始显示内容'
+    });
+    console.log(editor);
+  </script>
+</body>
+</html>
